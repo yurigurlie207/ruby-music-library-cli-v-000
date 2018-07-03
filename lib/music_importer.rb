@@ -12,7 +12,7 @@ class MusicImporter
   end
 
   def import
-    @files = files
+    # @files = files
     @files ? @files.each { |filename| Song.create_from_filename(filename) } : ""
   end
 
