@@ -8,7 +8,6 @@ class MusicImporter
   end
 
   def files
-    # @files =
     Dir.foreach(@path).select { |x| File.file?("#{@path}/#{x}") }
   end
 
